@@ -19,6 +19,10 @@ button {
     align-items: center;
 }
 
-.hide {
+.hidden {
     display: none;
+}
+
+.invisible {
+    visibility: hidden;
 }
