@@ -1,4 +1,4 @@
-# CodeQuiz
+# GeniusTest
 
 This test takes the user through five questions as a timer counts down from 60 seconds. The user must answer a question correctly before they are taken to the next question. If they answer a question incorrectly, 10 seconds are deducted from their remaining time. If they run out of time, they are alerted and the test starts over.
 
