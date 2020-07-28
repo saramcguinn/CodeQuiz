@@ -1,23 +1,142 @@
-#timer {
-    float: right;
-    margin-right: 5px;
+/************************************************************************************************************** 
+GENERAL 
+**************************************************************************************************************/
+
+body {
+    max-width: 700px;
+    background-image: url(http://www.clipartbest.com/cliparts/RTG/RRE/RTGRREe8c.jpg);
+    background-size: 10%;
+    background-repeat: repeat;
+    background-color: blue;
+    margin: 0 auto;
 }
 
+header {
+    max-width: 700px;
+    padding: 10px;
+    padding-bottom: 15px;
+    background-color: red; 
+    border-left: solid 2px gray;
+    border-right: solid 2px gray;
+    border-top: solid 2px gray;
+}
+
+/**************************************************************************************************************  
+TEXT STYLING 
+**************************************************************************************************************/
+
 h1 {
+    font-size: 25px;
     text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+#highscoresSection h1 {
+    color: blue;
 }
 
 p {
     text-align: center;
 }
 
-button {
+span {
+    color:black;
+    font-weight: bold;
+}
 
+/**************************************************************************************************************  
+SECTION CLASSES & IDS 
+**************************************************************************************************************/
+
+.container {
+    background-color: white;
+    border: solid 2px gray;
+}
+
+#questionSection {
+    padding: 10px;
+}
+
+#buttonSection {
+    text-align: center;
+}
+
+#answerResultSection {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+#highscoresSection {
+    padding: 10px;
+    text-align: center;
+}
+
+#timer {
+    float: right;
+    margin-right: 5px;
+}
+
+/************************************************************************************************************** 
+LIST 
+**************************************************************************************************************/
+
+ol {
+    text-align: left;
+    padding-left: 50px;
+}
+
+li::before {
+    content: "";
+    width: 20px;
+    display: inline-block;
+}
+
+/************************************************************************************************************** 
+BUTTONS 
+**************************************************************************************************************/
+
+button {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    opacity: 80%;
+}
+
+button:active {
+    border: none;
 }
 
 #startBtn {
     align-items: center;
 }
+
+/************************************************************************************************************** 
+HIGHSCORE SPAN 
+**************************************************************************************************************/
+
+#highscoreSpan {
+    text-decoration: underline;
+}
+
+#highscoreSpan:hover {
+    cursor: context-menu;
+    color: blue;
+}
+
+/************************************************************************************************************** 
+VISIBILITY CLASSES 
+**************************************************************************************************************/
 
 .hidden {
     display: none;

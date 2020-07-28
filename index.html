@@ -10,32 +10,34 @@
 
     <body>
         <header>
-            <span id="highscore">View highscores</span>
+            <span id="highscoreSpan">View highscores</span>
             <span id="timer">Time Left: <span id="timeLeft"></span> </span>
         </header>
-
-        <section id="questionSection">
-            <h1 id="intro">The Best Greatest Genius Test Ever In The World</h1>
-            <p id="instructions">You have 60 seconds to answer 5 questions correctly. You must choose the correct answer in order to move on. Every time you choose a wrong answer, 10 seconds are deducted from your remaining time. If you get them all right, you're pretty much a genius.</p>
-        </section>
         
-        <section id="buttonSection">
-        </section>
+        <div class="container">
+            <section id="questionSection">
+                <h1 id="intro">The Best Greatest Genius Test Ever</h1>
+                <p id="instructions">You have 60 seconds to answer 5 questions correctly. <br> You must choose the correct answer in order to move on. Every time you choose a wrong answer, 10 seconds are deducted from your remaining time. If you get them all right, you're pretty much a genius.</p>
+            </section>
+            
+            <section id="buttonSection">
+            </section>
 
-        <section id="answerResultSection">
-        </section>
+            <section id="answerResultSection">
+            </section>
 
-        <section class="hidden" id="highscoresSection">
-            <h1>Highscores</h1>
-            <h2 id="message">Yeah, you got all the answers! PERSON-WOMAN-MAN-CAMERA-TV! How did you do that?? You must be a genius!!</h2>
-            <ol id=highscoreList></ol>
-            <form id="newscore">
-                <p>Your score: <span id="userScore"></span></p>
-                <label for="nameInput">Add your name</label>
-                <input type="text" placeholder="Name" name="nameInput" id="nameInput" />
-                <button id="highscoreSubmit">Submit</button>
-            </form>
-        </section>
+            <section class="hidden" id="highscoresSection">
+                <h1>Highscores</h1>
+                <h2 id="message">Yeah, you got all the answers! <br> PERSON-WOMAN-MAN-CAMERA-TV! <br> How did you do that?? You must be a genius!!</h2>
+                <ol id=highscoreList></ol>
+                <form id="newscore">
+                    <p>Your score: <span id="userScore"></span></p>
+                    <label for="nameInput">Add your name</label>
+                    <input type="text" placeholder="Name" name="nameInput" id="nameInput" />
+                    <button id="highscoreSubmit">Submit</button>
+                </form>
+            </section>
+        </div>
     
     <script src='script.js'></script>
 
