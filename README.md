@@ -4,7 +4,8 @@ This test takes the user through five questions as a timer counts down from 60 s
 
 Once the test is finished, the user's score - the number of remaining seconds - is captured, and the user adds their name to a highscore list, which is ordered from highest to lowest and kept in local storage.
 
-Github:
+Github:https://github.com/saramcguinn/GeniusTest
+
 Application URL:
 
 
