@@ -107,6 +107,10 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 button:hover {
     background-color: blue;
     color: white;
@@ -114,7 +118,8 @@ button:hover {
 }
 
 button:active {
-    border: none;
+    outline: none;
+    opacity: 50%;
 }
 
 #startBtn {
@@ -132,6 +137,10 @@ HIGHSCORE SPAN
 #highscoreSpan:hover {
     cursor: context-menu;
     color: blue;
+}
+
+#highscoreSpan:active {
+    opacity: 50%;
 }
 
 /************************************************************************************************************** 

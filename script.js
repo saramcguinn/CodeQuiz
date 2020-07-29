@@ -171,9 +171,7 @@ function renderHighscores() {
 //sorts objects in highscores array in descending score order, creates a list item for each high score object & renders the list to the DOM
     highscoreList.innerHTML = "";
     highscores = highscores.sort(compare)
-    console.log(highscores);
     for (var i=0; i<highscores.length; i++) {
-        // var highscore = highscores[i];
         var li = document.createElement("li");
         li.textContent = highscores[i].score + " | " + highscores[i].userName + " | " + highscores[i].date;
         highscoreList.appendChild(li);}
@@ -269,6 +267,7 @@ highscoresForm.addEventListener("submit", function(event){
     var d = new Date().toLocaleString();
     highscores.push({"userName" : userNameText, "score" : score, "date" : d});
     nameInput.value = "";
+    timerSpan.classList.add("hidden");
     storeHighscores();
     renderHighscores();
     createRefreshButton();
